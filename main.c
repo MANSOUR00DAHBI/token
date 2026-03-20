@@ -1,5 +1,6 @@
 #include "./include/token.h"
 #define IMPLEMENTED_H
+#define SOCKT_h
 
 int main(void)
 {
