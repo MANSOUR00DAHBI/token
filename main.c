@@ -1,9 +1,11 @@
-#include "./include/token.h"
+#include "./include/eval.h"
 #define IMPLEMENTED_H
 #define SOCKT_h
+#define EVAL_H
 
 int main(void)
 {
+    STOCK stock;
     TOKEN tokens[100];
     char expr[256];
     printf("Enter the mathematical expression: ");
@@ -60,6 +62,7 @@ int main(void)
             }
         }
     }
-
+    double result = evaluate(tokens,sizeof(tokens),stock);
+    printf("result : %lld \n", result);
     return 0;
 }

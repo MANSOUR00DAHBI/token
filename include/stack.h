@@ -2,6 +2,7 @@
 
 #ifndef STOCK_H
 #define SOCKT_h
+#include "token.h"
 #define MAXSTOCK 256
 typedef struct STOCK
 {
